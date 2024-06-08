@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class MostrarVida : MonoBehaviour
 {
     [SerializeField] Text SaludTexto;
-    public int Salud;
+    public int salud;
 
 
     void SaludDisplay(int cantidad)
     {
-        Salud = Salud - cantidad;
-        SaludTexto.text = "Salud: " + Salud;
+        salud = salud - cantidad;
+        SaludTexto.text = "Salud: " + salud;
     }
 
 

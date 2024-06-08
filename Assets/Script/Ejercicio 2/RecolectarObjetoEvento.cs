@@ -16,7 +16,5 @@ public class RecolectarObjetoEvento : MonoBehaviour
             ObjetoRecolectado?.Invoke(objeto);
             Destroy(gameObject);
         }
-
-        //cambiar action por un evento comun y luego añadir al trigger el metodo "añadirItem"
     }
 }

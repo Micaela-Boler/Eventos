@@ -6,18 +6,15 @@ using UnityEngine;
 public class NivelEvento : MonoBehaviour
 {
     public static event Action<int> CambiarNivel;
+    [SerializeField] int nivel;
 
-    public Inventario inventario;
-    public MostrarVida mostrarVida;
 
 
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Q))
         {
-            CambiarNivel?.Invoke(0);
+            CambiarNivel?.Invoke(nivel);
         }
     }
-
-    //acceder a la varibable de salud y de objetos recolectados, luego hacer que se reinicnien
 }
